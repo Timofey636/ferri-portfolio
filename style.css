@@ -521,3 +521,53 @@ footer > span {
   transform: translateY(-3px);
   opacity: 0.85;
 }
+/* WORKFLOW */
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.workflow-card {
+  background: #121212;
+  border: 1px solid #252525;
+  border-radius: 16px;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.workflow-card:hover {
+  transform: translateY(-5px);
+  border-color: #c6ff5e;
+}
+
+.workflow-number {
+  font-size: 35px;
+  font-weight: 900;
+  color: #c6ff5e;
+}
+
+.workflow-card h3 {
+  font-size: 21px;
+  margin-top: 25px;
+}
+
+.workflow-card p {
+  color: #858585;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 12px;
+}
+
+@media (max-width: 1000px) {
+  .workflow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
+}
