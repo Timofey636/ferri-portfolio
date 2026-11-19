@@ -504,3 +504,20 @@ footer > span {
     padding: 25px;
   }
 }
+.price-button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #c6ff5e;
+  color: #0a0a0a;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 800;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+
+.price-button:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+}
